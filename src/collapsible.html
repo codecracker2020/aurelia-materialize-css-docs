@@ -1,0 +1,336 @@
+<template>
+  <section class="au-animate">
+    <div class="row">
+      <m:scroll-spy class="col s12 m9 l10">
+        <div id="introduction" class="section">
+          <h4>Introduction</h4>
+          <p class="caption">
+            Collapsibles are accordion elements that expand when clicked on. They allow you to hide content that is not immediately relevant
+            to the user.
+          </p>
+          <m:collapsible type="accordion">
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">filter_drama</i>First
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">place</i>Second
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">whatshot</i>Third
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+          </m:collapsible>
+        </div>
+        <div id="popout" class="section">
+          <h4>Popout</h4>
+          <p class="caption">
+            To create a popout collapsible, just add the class <code class="language-markup">popout</code>.
+          </p>
+
+          <m:collapsible type="accordion" class="popout">
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">subtitles</i>First
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">games</i>Second
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">library_books</i>Third
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+          </m:collapsible>
+        </div>
+
+        <div id="usage" class="section">
+          <h4>Usage</h4>
+          <p>As web custom element</p>
+          <m:collapsible type="accordion">
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">filter_drama</i>First
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">place</i>Second
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">whatshot</i>Third
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+          </m:collapsible>
+
+          <ace style="height:400px">
+            &lt;m:collapsible type=&quot;accordion&quot;&gt; &lt;m:collapsible-item&gt; &lt;m:collapsible-header&gt; &lt;i class=&quot;material-icons&quot;&gt;filter_drama&lt;/i&gt;First
+            &lt;/m:collapsible-header&gt; &lt;m:collapsible-body&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/m:collapsible-body&gt;
+            &lt;/m:collapsible-item&gt; &lt;m:collapsible-item&gt; &lt;m:collapsible-header&gt; &lt;i class=&quot;material-icons&quot;&gt;place&lt;/i&gt;Second
+            &lt;/m:collapsible-header&gt; &lt;m:collapsible-body&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/m:collapsible-body&gt;
+            &lt;/m:collapsible-item&gt; &lt;m:collapsible-item&gt; &lt;m:collapsible-header&gt; &lt;i class=&quot;material-icons&quot;&gt;whatshot&lt;/i&gt;Third
+            &lt;/m:collapsible-header&gt; &lt;m:collapsible-body&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/m:collapsible-body&gt;
+            &lt;/m:collapsible-item&gt; &lt;/m:collapsible&gt;
+          </ace>
+          <p>
+            Or by adding the attribute: <code>m:collapsible</code> to the div containing the class collapsible. See the
+            <a
+            href="http://materializecss.com/collapsible.html">original materialize-css documentation</a> for the options.
+          </p>
+
+          <ul class="collapsible" data-collapsible="accordion" m:collapsible>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+          </ul>
+
+          <ace style="height:400px">
+            &lt;ul class=&quot;collapsible&quot; data-collapsible=&quot;accordion&quot; m:collapsible&gt; &lt;li&gt; &lt;div class=&quot;collapsible-header&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;filter_drama&lt;/i&gt;First &lt;/div&gt; &lt;div class=&quot;collapsible-body&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div class=&quot;collapsible-header&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;place&lt;/i&gt;Second &lt;/div&gt; &lt;div class=&quot;collapsible-body&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div class=&quot;collapsible-header&quot;&gt;
+            &lt;i class=&quot;material-icons&quot;&gt;whatshot&lt;/i&gt;Third &lt;/div&gt; &lt;div class=&quot;collapsible-body&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;/ul&gt;
+          </ace>
+        </div>
+        <div id="preselect" class="section">
+          <h5>Preselected Section</h5>
+          <p>If you want a collapsible with a preopened section just add the <code class="language-markup">active</code> class
+            to the collapsible-header. </p>
+
+          <m:collapsible type="accordion">
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">filter_drama</i>First
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header class="active">
+                <i class="material-icons">place</i>Second
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+            <m:collapsible-item>
+              <m:collapsible-header>
+                <i class="material-icons">whatshot</i>Third
+              </m:collapsible-header>
+              <m:collapsible-body>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </m:collapsible-body>
+            </m:collapsible-item>
+          </m:collapsible>
+        </div>
+
+        <div id="options" class="section">
+          <h4>Options</h4>
+          <p>There are two ways a collapsible can behave. It can either allow multiple sections to stay open, or it can only
+            allow one section to stay open at a time, which is called an accordion. See below for a demo of each type</p>
+        </div>
+
+        <div id="accordion" class="section">
+          <div class="row">
+            <div class="col s12 m3">
+              <h5 class="light">Accordion</h5></div>
+            <div class="col s12 m9">
+
+              <m:collapsible type="accordion">
+                <m:collapsible-item>
+                  <m:collapsible-header>
+                    <i class="material-icons">filter_drama</i>First
+                  </m:collapsible-header>
+                  <m:collapsible-body>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </m:collapsible-body>
+                </m:collapsible-item>
+                <m:collapsible-item>
+                  <m:collapsible-header>
+                    <i class="material-icons">place</i>Second
+                  </m:collapsible-header>
+                  <m:collapsible-body>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.</p>
+                  </m:collapsible-body>
+                </m:collapsible-item>
+                <m:collapsible-item>
+                  <m:collapsible-header>
+                    <i class="material-icons">whatshot</i>Third
+                  </m:collapsible-header>
+                  <m:collapsible-body>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.</p>
+                  </m:collapsible-body>
+                </m:collapsible-item>
+              </m:collapsible>
+            </div>
+
+            <div class="col s12 m9 offset-m3">
+              <p>This is default behavior, but you can explicitly set it by setting the type attribute type on the m:collapsible
+                element.</p>
+              <ace style="height: 30px">
+                &lt;m:collapsible type=&quot;accordion&quot;&gt;
+              </ace>
+            </div>
+          </div>
+        </div>
+
+        <div id="expandable" class="section">
+          <div class="row">
+            <div class="col s12 m3">
+              <h5 class="light">Expandable</h5></div>
+            <div class="col s12 m9">
+              <m:collapsible type="expandable">
+                <m:collapsible-item>
+                  <m:collapsible-header>
+                    <i class="material-icons">filter_drama</i>First
+                  </m:collapsible-header>
+                  <m:collapsible-body>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </m:collapsible-body>
+                </m:collapsible-item>
+                <m:collapsible-item>
+                  <m:collapsible-header>
+                    <i class="material-icons">place</i>Second
+                  </m:collapsible-header>
+                  <m:collapsible-body>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.</p>
+                  </m:collapsible-body>
+                </m:collapsible-item>
+                <m:collapsible-item>
+                  <m:collapsible-header>
+                    <i class="material-icons">whatshot</i>Third
+                  </m:collapsible-header>
+                  <m:collapsible-body>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                      ex ea commodo consequat.</p>
+                  </m:collapsible-body>
+                </m:collapsible-item>
+              </m:collapsible>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m9 offset-m3">
+              <ace style="height: 30px">
+                &lt;m:collapsible type=&quot;expandable&quot;&gt;
+              </ace>
+            </div>
+          </div>
+        </div>
+      </m:scroll-spy>
+      <m:pushpin top="45" class="col hide-on-small-only m3 l2">
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#popout">Popout</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#accordion">Accordion</a></li>
+            <li><a href="#expandable">Expandable</a></li>
+          </ul>
+        </div>
+      </m:pushpin>
+    </div>
+  </section>
+</template>

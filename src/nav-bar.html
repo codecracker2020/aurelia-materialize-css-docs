@@ -1,0 +1,26 @@
+<template bindable="router">
+  <div class="container">
+    <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+  <ul id="nav-mobile" class="side-nav fixed">
+
+    <li class="logo">
+      <a id="logo-container" href="http://materializecss.com/" class="brand-logo">
+        <img src="http://aurelia.io/images/main-logo.svg" />
+        <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg" style="position:relative;top:-15px;">Your browser does not support SVG</object>
+      </a>
+      <br />
+    </li>
+    <li class="search" style="margin-top:30px">
+      <div class="search-wrapper card">
+        <input id="search"><i class="material-icons">search</i>
+        <div class="search-results"></div>
+      </div>
+    </li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+          <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1.in" href.bind="row.href">${row.title}</a>
+        </li>
+        <li class="bold"><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+      </ul>
+</template>

@@ -1,0 +1,17 @@
+<template>
+  <require from="nav-bar.html"></require>
+
+  <header>
+    <nav class="top-nav">
+      <div class="container">
+        <div class="nav-wrapper"><a class="page-title">${router.currentInstruction.config.title}</a></div>
+      </div>
+    </nav>
+    <nav-bar router.bind="router"></nav-bar>
+  </header>
+  <main>
+    <div class="container">
+      <router-view></router-view>
+    </div>
+  </main>
+</template>
