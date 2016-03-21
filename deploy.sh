@@ -119,6 +119,14 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   eval "node_modules/.bin/jspm" install
   exitWithMessageOnError "jspm failed"
   
+  #install typings
+  eval "node_modules/.bin/typings" install
+  exitWithMessageOnError "typings install failed"  
+  
+  #gulp build
+  eval "node_modules/.bin/gulp" build
+  exitWithMessageOnError "gulp build failed"
+  
   cd - > /dev/null
 fi
 
