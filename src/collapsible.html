@@ -7,7 +7,7 @@
           <p class="caption">
             Collapsibles are accordion elements that expand when clicked on. They allow you to hide content that is not immediately relevant
             to the user.
-          </p>
+          </p>         
           <m:collapsible type="accordion">
             <m:collapsible-item>
               <m:collapsible-header>
@@ -118,16 +118,33 @@
               </m:collapsible-body>
             </m:collapsible-item>
           </m:collapsible>
-
-          <ace style="height:400px">
-            &lt;m:collapsible type=&quot;accordion&quot;&gt; &lt;m:collapsible-item&gt; &lt;m:collapsible-header&gt; &lt;i class=&quot;material-icons&quot;&gt;filter_drama&lt;/i&gt;First
-            &lt;/m:collapsible-header&gt; &lt;m:collapsible-body&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/m:collapsible-body&gt;
-            &lt;/m:collapsible-item&gt; &lt;m:collapsible-item&gt; &lt;m:collapsible-header&gt; &lt;i class=&quot;material-icons&quot;&gt;place&lt;/i&gt;Second
-            &lt;/m:collapsible-header&gt; &lt;m:collapsible-body&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/m:collapsible-body&gt;
-            &lt;/m:collapsible-item&gt; &lt;m:collapsible-item&gt; &lt;m:collapsible-header&gt; &lt;i class=&quot;material-icons&quot;&gt;whatshot&lt;/i&gt;Third
-            &lt;/m:collapsible-header&gt; &lt;m:collapsible-body&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/m:collapsible-body&gt;
-            &lt;/m:collapsible-item&gt; &lt;/m:collapsible&gt;
-          </ace>
+          
+<prism language="html">&lt;m:collapsible type=&quot;accordion&quot;&gt;
+  &lt;m:collapsible-item&gt;
+    &lt;m:collapsible-header&gt;
+      &lt;i class=&quot;material-icons&quot;&gt;filter_drama&lt;/i&gt;First
+    &lt;/m:collapsible-header&gt;
+    &lt;m:collapsible-body&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/m:collapsible-body&gt;
+  &lt;/m:collapsible-item&gt;
+  &lt;m:collapsible-item&gt;
+    &lt;m:collapsible-header&gt;
+      &lt;i class=&quot;material-icons&quot;&gt;place&lt;/i&gt;Second
+    &lt;/m:collapsible-header&gt;
+    &lt;m:collapsible-body&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/m:collapsible-body&gt;
+  &lt;/m:collapsible-item&gt;
+  &lt;m:collapsible-item&gt;
+    &lt;m:collapsible-header&gt;
+      &lt;i class=&quot;material-icons&quot;&gt;whatshot&lt;/i&gt;Third
+    &lt;/m:collapsible-header&gt;
+    &lt;m:collapsible-body&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/m:collapsible-body&gt;
+  &lt;/m:collapsible-item&gt;
+&lt;/m:collapsible&gt;</prism>
           <p>
             Or by adding the attribute: <code>m:collapsible</code> to the div containing the class collapsible. See the
             <a
@@ -154,16 +171,27 @@
               </div>
             </li>
           </ul>
+<prism language="html">&lt;ul class=&quot;collapsible&quot; data-collapsible=&quot;accordion&quot; m:collapsible&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;collapsible-header&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;filter_drama&lt;/i&gt;First&lt;/div&gt;
+    &lt;div class=&quot;collapsible-body&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;collapsible-header&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;place&lt;/i&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;collapsible-body&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;collapsible-header&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;whatshot&lt;/i&gt;Third&lt;/div&gt;
+    &lt;div class=&quot;collapsible-body&quot;&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</prism>  
 
-          <ace style="height:400px">
-            &lt;ul class=&quot;collapsible&quot; data-collapsible=&quot;accordion&quot; m:collapsible&gt; &lt;li&gt; &lt;div class=&quot;collapsible-header&quot;&gt;
-            &lt;i class=&quot;material-icons&quot;&gt;filter_drama&lt;/i&gt;First &lt;/div&gt; &lt;div class=&quot;collapsible-body&quot;&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div class=&quot;collapsible-header&quot;&gt;
-            &lt;i class=&quot;material-icons&quot;&gt;place&lt;/i&gt;Second &lt;/div&gt; &lt;div class=&quot;collapsible-body&quot;&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;li&gt; &lt;div class=&quot;collapsible-header&quot;&gt;
-            &lt;i class=&quot;material-icons&quot;&gt;whatshot&lt;/i&gt;Third &lt;/div&gt; &lt;div class=&quot;collapsible-body&quot;&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;/div&gt; &lt;/li&gt; &lt;/ul&gt;
-          </ace>
         </div>
         <div id="preselect" class="section">
           <h5>Preselected Section</h5>
@@ -261,9 +289,7 @@
             <div class="col s12 m9 offset-m3">
               <p>This is default behavior, but you can explicitly set it by setting the type attribute type on the m:collapsible
                 element.</p>
-              <ace style="height: 30px">
-                &lt;m:collapsible type=&quot;accordion&quot;&gt;
-              </ace>
+              <prism language="html">&lt;m:collapsible type=&quot;accordion&quot;&gt;</prism>
             </div>
           </div>
         </div>
@@ -313,9 +339,7 @@
           </div>
           <div class="row">
             <div class="col s12 m9 offset-m3">
-              <ace style="height: 30px">
-                &lt;m:collapsible type=&quot;expandable&quot;&gt;
-              </ace>
+              <prism language="html">&lt;m:collapsible type=&quot;expandable&quot;&gt;</prism>
             </div>
           </div>
         </div>

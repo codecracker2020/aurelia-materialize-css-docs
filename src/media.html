@@ -1,0 +1,107 @@
+<template>
+<section class="au-animate">
+
+    <div class="row">
+        <m:scroll-spy class="col s12 m9 l10">
+            <p class="caption">Media components include things that have to do with large media objects like Images, Video, Audio, etc.</p>
+            <div id="materialbox" class="scrollspy section">  
+                <h2 class="header">Material Box</h2>
+                <p class="caption">Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.</p>
+                <img class="responsive-img" m:boxed width="650" src="images/sample-1.jpg">
+                <p>Creating the above image with the effect is as simple as adding a <code class="language-markup">materialboxed</code> class to the image tag.</p>
+                <prism language="html">&lt;img class=&quot;responsive-img&quot; m:boxed width=&quot;650&quot; src=&quot;images/sample-1.jpg&quot;&gt;</prism>
+
+                <h4>Captions</h4>
+                <p>It is very easy to add a short caption to your photo. Just add the caption as a <code class="language-markup">data-caption</code> attribute.</p>
+                <img m:boxed data-caption="A picture of some deer and tons of trees" width="250" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+                <prism language="html">&lt;img m:boxed data-caption=&quot;A picture of some deer and tons of trees&quot; width=&quot;250&quot; 
+     src=&quot;http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg&quot;&gt;</prism>
+            </div>
+            <br> 
+
+            <!--  Slider Section  -->
+            <div id="slider" class="scrollspy section">
+                <h3 class="header">Slider</h3>
+                <p class="caption">Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. </p>
+                <p>Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider.</p><br>
+
+                <m:slider>
+                    <m:slide>
+                    <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                    </m:slide>
+                    <m:slide>
+                    <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                    </m:slide>
+                    <m:slide>
+                    <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                    </m:slide>
+                    <m:slide>
+                    <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                    </m:slide>
+                </m:slider>
+                <br>
+                <prism language="html">&lt;m:slider&gt;
+    &lt;m:slide&gt;
+    &lt;img src=&quot;http://lorempixel.com/580/250/nature/1&quot;&gt; &lt;!-- random image --&gt;
+    &lt;div class=&quot;caption center-align&quot;&gt;
+        &lt;h3&gt;This is our big Tagline!&lt;/h3&gt;
+        &lt;h5 class=&quot;light grey-text text-lighten-3&quot;&gt;Here's our small slogan.&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;/m:slide&gt;
+    &lt;m:slide&gt;
+    &lt;img src=&quot;http://lorempixel.com/580/250/nature/2&quot;&gt; &lt;!-- random image --&gt;
+    &lt;div class=&quot;caption left-align&quot;&gt;
+        &lt;h3&gt;Left Aligned Caption&lt;/h3&gt;
+        &lt;h5 class=&quot;light grey-text text-lighten-3&quot;&gt;Here's our small slogan.&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;/m:slide&gt;
+    &lt;m:slide&gt;
+    &lt;img src=&quot;http://lorempixel.com/580/250/nature/3&quot;&gt; &lt;!-- random image --&gt;
+    &lt;div class=&quot;caption right-align&quot;&gt;
+        &lt;h3&gt;Right Aligned Caption&lt;/h3&gt;
+        &lt;h5 class=&quot;light grey-text text-lighten-3&quot;&gt;Here's our small slogan.&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;/m:slide&gt;
+    &lt;m:slide&gt;
+    &lt;img src=&quot;http://lorempixel.com/580/250/nature/4&quot;&gt; &lt;!-- random image --&gt;
+    &lt;div class=&quot;caption center-align&quot;&gt;
+        &lt;h3&gt;This is our big Tagline!&lt;/h3&gt;
+        &lt;h5 class=&quot;light grey-text text-lighten-3&quot;&gt;Here's our small slogan.&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;/m:slide&gt;
+&lt;/m:slider&gt;</prism>
+                <br>
+                <h4>Fullscreen Slider</h4>
+                <p>TODO</p>
+            </div>
+        </m:scroll-spy>
+        <m:pushpin class="col hide-on-small-only m3 l2" top="45">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="section table-of-contents">
+                        <li><a href="#materialbox">Material Box</a></li>
+                        <li><a href="#slider">Slider</a></li>
+                        <li><a href="#carousel">Carousel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </m:pushpin>
+    </div>
+</section>
+</template>

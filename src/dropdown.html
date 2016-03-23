@@ -1,0 +1,89 @@
+<template>
+<section class="au-animate">
+    <div class="row">
+        <m:scroll-spy class="col s12 m9 l10">
+            <div id="introduction" class="scrollspy section">
+                <h4>Introduction</h4>
+                <p>Create a dropdown list with a button.</p> 
+                   
+                <m:dropdown id="foo" title="drop me!" in-duration="1500" out-duration="300">
+                    <m:dropdown-item><a>one 1</a></m:dropdown-item>
+                    <m:dropdown-item><a>two 2</a></m:dropdown-item>
+                    <m:dropdown-divider></m:dropdown-divider>
+                    <m:dropdown-item><a>three 3</a></m:dropdown-item>
+                </m:dropdown>
+                <br><br>
+                <prism language="html">&lt;m:dropdown title=&quot;drop me!&quot;&gt;
+    &lt;m:dropdown-item&gt;&lt;a&gt;one 1&lt;/a&gt;&lt;/m:dropdown-item&gt;
+    &lt;m:dropdown-item&gt;&lt;a&gt;two 2&lt;/a&gt;&lt;/m:dropdown-item&gt;
+    &lt;m:dropdown-divider&gt;&lt;/m:dropdown-divider&gt;
+    &lt;m:dropdown-item&gt;&lt;a&gt;three 3&lt;/a&gt;&lt;/m:dropdown-item&gt;
+&lt;/m:dropdown&gt;</prism>
+            </div>
+
+            <div id="options">
+                <h4>Options</h4>
+                <p>The options below can be set by using them as attributes</p>
+                <prism language="html">&lt;m:dropdown title=&quot;drop me!&quot; in-duration=&quot;1500&quot; out-duration=&quot;300&quot;&gt;
+    &lt;m:dropdown-item&gt;&lt;a&gt;one 1&lt;/a&gt;&lt;/m:dropdown-item&gt;
+    &lt;m:dropdown-item&gt;&lt;a&gt;two 2&lt;/a&gt;&lt;/m:dropdown-item&gt;
+    &lt;m:dropdown-divider&gt;&lt;/m:dropdown-divider&gt;
+    &lt;m:dropdown-item&gt;&lt;a&gt;three 3&lt;/a&gt;&lt;/m:dropdown-item&gt;
+&lt;/m:dropdown&gt;</prism>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Attribute Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>title</td>
+                        <td>The text on the button. (bindable 2way)</td>
+                        </tr>              
+                        <tr>
+                        <td>in-duration</td>
+                        <td>The duration of the transition enter in milliseconds. Default: 300</td>
+                        </tr>
+                        <tr>
+                        <td>out-duration</td>
+                        <td>The duration of the transition out in milliseconds. Default: 225</td>
+                        </tr>
+                        <tr>
+                        <td>constrain-width</td>
+                        <td>If true, constrainWidth to the size of the dropdown activator. Default: true</td>
+                        </tr>
+                        <tr>
+                        <td>hover</td>
+                        <td>If true, the dropdown will open on hover. Default: false</td>
+                        </tr>
+                        <tr>
+                        <td>gutter</td>
+                        <td>This defines the spacing from the aligned edge. Default: 0</td>
+                        </tr>
+                        <tr>
+                        <td>below-origin</td>
+                        <td>If true, the dropdown will show below the activator. Default: false</td>
+                        </tr>
+                        <tr>
+                        <td>alignment</td>
+                        <td>Defines the edge the menu is aligned to. Default: 'left'</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>                
+        </m:scroll-spy>
+        
+        <m:pushpin top="45" class="col hide-on-small-only m3 l2">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="section table-of-contents">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#options">Options</a></li>
+                    </ul>
+            </div>
+        </m:pushpin>                 
+    </div>
+</section>
+</template>

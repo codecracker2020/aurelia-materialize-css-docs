@@ -1,0 +1,176 @@
+<template>
+    <section>
+        <div class="row">
+            <m:scroll-spy class="col s12 m9 l10">
+                <div id="introduction" class="section">
+                    <h4>Introduction</h4>
+                    <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class <code class="language-css">.modal-close</code> to your button.</p>
+                    
+                    <a class="waves-effect waves-light btn" m:modal-trigger="modal1">Modal</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="waves-effect waves-light btn" m:modal-trigger="modal2">Modal With Fixed Footer</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="waves-effect waves-light btn" m:modal-trigger="modal3">Modal Bottom Sheet Style</a>                    
+                </div>
+
+                <div id="structure" class="section">
+                    <h4>Modals HTML Structure</h4>
+                    <prism language="html">&lt;!-- Modal Trigger --&gt;
+&lt;a class=&quot;waves-effect waves-light btn&quot; m:modal-trigger=&quot;modal1&quot;&gt;Modal&lt;/a&gt;
+
+&lt;!-- Modal Structure --&gt;
+&lt;m:modal id=&quot;modal1&quot; class=&quot;modal&quot;&gt;
+    &lt;m:modal-content&gt;   
+        &lt;h4&gt;Modal Header&lt;/h4&gt;
+        &lt;p&gt;A bunch of text&lt;/p&gt;
+    &lt;/m:modal-content&gt;
+    &lt;m:modal-footer&gt;
+        &lt;a class=&quot;modal-action modal-close waves-effect waves-green btn-flat &quot;&gt;Agree&lt;/a&gt;
+    &lt;/m:modal-footer&gt;
+&lt;/m:modal&gt;</prism>
+                </div>
+                
+                <div id="fixed-footer" class="section">
+                    <h4>Modals with Fixed Footer</h4>
+                    <p>If you have content that is very long and you want the action buttons to be visible all the time, you can add the <code class="language-markup">modal-fixed-footer</code> class to the modal. </p>
+                    <prism language="html">&lt;a class=&quot;waves-effect waves-light btn&quot; m:modal-trigger=&quot;modal2&quot;&gt;Modal With Fixed Footer&lt;/a&gt;
+
+&lt;m:modal id=&quot;modal2&quot; class=&quot;modal modal-fixed-footer&quot;&gt;
+    &lt;m:modal-content&gt;
+        &lt;h4&gt;Modal Header&lt;/h4&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/p&gt;
+    &lt;/m:modal-content&gt;
+    &lt;m:modal-footer&gt;
+        &lt;a class=&quot;modal-action modal-close waves-effect waves-red btn-flat &quot;&gt;Disagree&lt;/a&gt;
+        &lt;a class=&quot;modal-action modal-close waves-effect waves-green btn-flat &quot;&gt;Agree&lt;/a&gt;
+    &lt;/m:modal-footer&gt;
+&lt;/m:modal&gt;</prism>
+                </div>                 
+
+<div id="bottom-sheet" class="section">
+                    <h4>Bottom Sheet Modals</h4>
+                    <p>Bottom Sheet Modals are good for displaying actions to the user on the bottom of a screen. They still act the same as regular modals.</p>
+                <prism language="html">&lt;a class=&quot;waves-effect waves-light btn&quot; m:modal-trigger=&quot;modal3&quot;&gt;Modal Bottom Sheet Style&lt;/a&gt;
+&lt;m:modal id=&quot;modal3&quot; class=&quot;modal bottom-sheet&quot;&gt;
+    &lt;m:modal-content&gt;
+        &lt;h4&gt;Modal Header&lt;/h4&gt;
+        &lt;ul class=&quot;collection&quot;&gt;
+            &lt;li class=&quot;collection-item avatar&quot;&gt;
+                &lt;img src=&quot;images/yuna.jpg&quot; alt=&quot;&quot; class=&quot;circle&quot;&gt;
+                &lt;span class=&quot;title&quot;&gt;Title&lt;/span&gt;
+                &lt;p&gt;First Line &lt;br&gt;
+                Second Line
+                &lt;/p&gt;
+                &lt;a class=&quot;secondary-content&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;grade&lt;/i&gt;&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/m:modal-content&gt;
+&lt;/m:modal&gt;</prism>
+                </div>
+
+                <div id="button-trigger" class="section">
+                    <h4>Modals with Button trigger</h4>
+                    <p>If you prefer to use a button to open a modal use the <code>m:modal-trigger</code> custom attribute and specify the Modal ID.</p>
+
+                    <prism language="html">&lt;a class=&quot;waves-effect waves-light btn&quot; m:modal-trigger=&quot;modal1&quot;&gt;Modal&lt;/a&gt;</prism>
+                </div>
+
+
+
+                <div id="modalService" class="section">
+                    <h4>Modal Service..(TODO)</h4>
+                    <p>To open a modal using a trigger:</p>
+                    <p>You can also open modals programatically, the below code will make your modal open on document ready:</p>
+                    
+                    <p>You can also close them programatically:</p>
+                    
+                </div>
+
+        </m:scroll-spy>
+        <m:pushpin class="col hide-on-small-only m3 l2" top="45">
+            <div class="toc-wrapper">
+                <div style="height: 1px;">
+                    <ul class="section table-of-contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#structure">Structure</a></li>
+                    <li><a href="#fixed-footer">Fixed Footer</a></li>
+                    <li><a href="#bottom-sheet">Bottom Sheet</a></li>
+                    <li><a href="#button-trigger">Button Trigger</a></li>
+                    <li><a href="modalService">Modal Service</a></li>
+                    <li><a href="#options">Options</a></li>
+                    </ul>
+                </div>
+            </div>
+        </m:pushpin>
+
+
+        <m:modal id="modal1" class="modal">
+            <m:modal-content>
+                <h4>Modal Header</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </m:modal-content>
+            <m:modal-footer>
+                <a class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
+                <a class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+            </m:modal-footer>
+        </m:modal>
+                    
+        <m:modal id="modal2" class="modal modal-fixed-footer">
+            <m:modal-content>
+                <h4>Modal Header</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </m:modal-content>
+            <m:modal-footer>
+                <a class="modal-action modal-close waves-effect waves-red btn-flat ">Disagree</a>
+                <a class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+            </m:modal-footer>
+        </m:modal>
+        
+        <m:modal id="modal3" class="modal bottom-sheet">
+            <m:modal-content>
+                <h4>Modal Header</h4>
+                <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                    Second Line
+                    </p>
+                    <a class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle">folder</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                    Second Line
+                    </p>
+                    <a class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle green">assessment</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                    Second Line
+                    </p>
+                    <a class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red">play_arrow</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                    Second Line
+                    </p>
+                    <a class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                </ul>
+            </m:modal-content>
+        </m:modal>
+        </div>        
+    </section>
+</template>

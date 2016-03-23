@@ -1,0 +1,55 @@
+
+<template>     
+<section class="au-animate">
+    <div class="row">
+        <m:scroll-spy class="col s12 m9 l10">
+
+            <div id="introduction" class="section">
+                <h4>Introduction</h4>
+                <p class="caption">Scrollspy is a jQuery plugin that tracks certain elements and which element the user's screen is currently centered on. Our main demo of this is our table of contents on every documentation page to the right. Clicking on these links will also scroll the page to that element.</p>
+            </div>
+
+            <div id="usage" class="section">
+                <h4>Usage</h4>
+                <p>ScrollSpy can be used as custom attribute or as custom element and is placed around the elements you want to spy upon.</p>
+        
+                <p>If you prefer a custom element:</p>
+                <prism language="html">&lt;m:scroll-spy&gt;
+  &lt;div id=&quot;section1&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;section2&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;section3&quot;&gt;&lt;/div&gt;  
+&lt;/m:scroll-spy&gt;</prism>
+        
+                <p>If you prefer a custom attribute:</p>
+                <prism language="html">&lt;div m:scroll-spy&gt;
+  &lt;div id=&quot;section1&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;section2&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;section3&quot;&gt;&lt;/div&gt;  
+&lt;/div&gt;</prism>
+        
+                <p>In each case there should be a set of links that act as the toc</p>
+                <prism language="html">&lt;ul class=&quot;table-of-contents&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#section1&quot;&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#section2&quot;&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#section3&quot;&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</prism>
+            </div>
+        </m:scroll-spy>
+
+        <!-- Table of Contents -->
+        <div class="col hide-on-small-only m3 l2">
+            <div class="toc-wrapper" m:pushpin="top: 45">
+                <div style="height: 1px;">
+                    <ul class="section table-of-contents">
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#usage">Usage</a></li>
+                    </ul>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <div class="row" style="height:1200px">
+        <div style="margin-top:3em" class="grey-text text-ligthen-2">Just some whitespace to enable scrolling, there is nothing below here</div>
+    </div> 
+</section>
+</template>
