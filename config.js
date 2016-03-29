@@ -13,6 +13,7 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
   map: {
+    "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@0.97.5-1",
     "@eriklieben/prismjs": "npm:@eriklieben/prismjs@1.4.1-4",
     "ajaxorg/ace-builds": "github:ajaxorg/ace-builds@1.2.3",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.2.0",
@@ -23,7 +24,7 @@ System.config({
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.2.0",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.2.0",
     "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1.2.0",
-    "aurelia-materialize-css": "npm:aurelia-materialize-css@0.0.7",
+    "aurelia-materialize-css": "npm:aurelia-materialize-css@0.0.12",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.0",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.1.0",
     "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.2.0",
@@ -48,7 +49,7 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:@eriklieben/materialize-css@0.97.5": {
+    "npm:@eriklieben/materialize-css@0.97.5-1": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "npm:jquery@2.2.2"
     },
@@ -117,8 +118,8 @@ System.config({
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.0",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.0"
     },
-    "npm:aurelia-materialize-css@0.0.7": {
-      "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@0.97.5",
+    "npm:aurelia-materialize-css@0.0.12": {
+      "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@0.97.5-1",
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.0",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.0",
       "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.0",

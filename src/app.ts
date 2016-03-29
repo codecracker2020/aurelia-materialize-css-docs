@@ -14,7 +14,8 @@ export class App {
         { route: ['javascript/modals'],   name: 'modals',  moduleId: 'modals',    nav: true,   title: 'Modals' },      
         { route: ['javascript/pushpin'],   name: 'pushpin',  moduleId: 'pushpin',    nav: true,   title: 'Pushpin' },
         { route: ['javascript/scrollSpy'],   name: 'scrollSpy',  moduleId: 'scrollSpy',    nav: true,   title: 'Scrollspy' },   
-        { route: ['components/forms'],   name: 'forms',  moduleId: 'forms',    nav: true,   title: 'Forms' },      
+        { route: ['components/forms'],   name: 'forms',  moduleId: 'forms',    nav: true,   title: 'Forms' },
+        { route: ['components/badge'],   name: 'badge',  moduleId: 'badge',    nav: true,   title: 'Badges' },      
     ]);
 
     this.router = router;
